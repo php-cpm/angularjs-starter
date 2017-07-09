@@ -1,0 +1,17 @@
+<!-- Place all UI elements intended to be present across all routes in this file -->
+<div class="app" ng-class="{'full-screen': vm.fullScreen}">
+  <div class="main-content gray-bg top-navigation">
+    <commonheader
+      ng-show="!vm.fullScreen"
+      title="穿云"
+      menu="vm.menu"
+      weifeng-url="false"
+      home="start"
+    ></commonheader>
+    <div class="main-wrapper gray-bg" ng-class="{'main-wrapper-black': vm.blackBackground}"  ui-view>
+    </div>
+    <commonfooter
+      ng-show="!vm.fullScreen"
+    ></commonfooter>
+  </div>
+</div>

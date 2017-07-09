@@ -1,0 +1,58 @@
+.app {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	// overflow: hidden;
+	.main-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		overflow-y: auto;
+		margin-left: 0px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #f3f3f4;
+		.main-wrapper {
+			//width: 100%;
+			//height: 100%;
+			//overflow-y: auto;
+			padding: 20px 44px 0 44px;
+			padding-bottom: 30px;
+		}
+	}
+}
+.full-screen {
+	.main-content {
+		padding: 0 !important;
+	}
+	.main-wrapper {
+		padding-top: 50px !important;
+		padding-bottom: 0px !important;
+	}
+	.logControlPanel {
+		top: 0 !important;
+	}
+}
+.menu-close {
+	.menu-container {
+		display: none;
+	}
+	.main-content {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.command_style {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	background: #2f4050;
+	color: #32c134;
+	margin: 1PX;
+	padding: 3PX;
+	display: inline-block;
+}
