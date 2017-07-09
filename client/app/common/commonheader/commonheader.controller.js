@@ -11,14 +11,10 @@ export default class commonHeaderController {
     
     this.menu = [
       {href: 'start', title: '首页'},
-      {href: 'polymer', title: '聚合信息页'},
-      {href: 'reallog', title: '原始信息查询'},
-      {href: 'agentCard', title: 'Agent管理'},
-      {href: 'project', title: '应用名IP查询'},
     ];
     
     this.user = {
-      name: '微风',
+      name: 'admin',
       pic: 'http://timg.ffan.com/convert/resize/url_T1DJdTBgZQ1RCvBVdK/tfs/db6a488cd2303be6bfbf185920b42d6b.png',
     }
   }

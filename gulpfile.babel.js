@@ -74,23 +74,6 @@ let chuckNorrisApiProxy = proxy(custonConfig.apiFilter, {
     Cookie: custonConfig.cookie
   }
 });
-let chuckNorrisApiProxy2 = proxy(custonConfig.apiFilter2, {
-  target: custonConfig.targetDomain2,
-  changeOrigin: true,
-  logLevel: 'debug',
-  headers: {
-    Cookie: custonConfig.cookie
-  }
-});
-
-let chuckNorrisApiProxy3 = proxy(custonConfig.apiFilter3, {
-  target: custonConfig.targetDomain3,
-  changeOrigin: true,
-  logLevel: 'debug',
-  headers: {
-    Cookie: custonConfig.cookie
-  }
-});
 
 gulp.task('serve', () => {
   const config = require('./webpack.dev.config');
@@ -120,8 +103,6 @@ gulp.task('serve', () => {
       }),
       webpachHotMiddelware(compiler),
       chuckNorrisApiProxy,
-      chuckNorrisApiProxy2,
-      chuckNorrisApiProxy3
     ]
   });
 });

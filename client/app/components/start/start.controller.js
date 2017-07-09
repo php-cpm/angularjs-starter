@@ -5,12 +5,12 @@
  */
 
 export default class StartController {
-  constructor($timeout, $interval, startService, reallogService, $state, $scope, $rootScope, $element) {
+  constructor($timeout, $interval, startService, $state, $scope, $rootScope, $element) {
     'ngInject';
     this.name = 'start';
     
     Object.assign(this, {
-      $timeout, $interval, startService, reallogService, $state, $scope, $rootScope, $element
+      $timeout, $interval, startService, $state, $scope, $rootScope, $element
     })
     
     $scope.$on('$destroy',() =>{
